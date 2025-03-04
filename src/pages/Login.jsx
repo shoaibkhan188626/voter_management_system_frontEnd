@@ -17,7 +17,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/admin/login",
+        "https://voter-management-system.onrender.com/api/admin/login",
         {
           identifier,
           password,
@@ -38,9 +38,9 @@ const Login = () => {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 50 }}
       transition={{ duration: 0.5 }}
-      className="flex justify-center items-center h-screen bg-gray-100"
+      className="flex justify-center items-center h-screen "
     >
-      <div className="flex justify-center items-center h-screen bg-gray-100">
+      <div className="flex justify-center items-center h-screen ">
         <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-center mb-4">
             Admin Login

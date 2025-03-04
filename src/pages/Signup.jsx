@@ -27,7 +27,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/admin/signup",
+        "https://voter-management-system.onrender.com/api/admin/signup",
         formData
       );
       setSuccess(response.data.message);
